@@ -18,6 +18,7 @@ I work across the stack — from mobile apps and backend services to firmware an
 Currently studying Computer Science, open to new opportunities and always learning.
 
 - 📱 Mobile development with **Flutter**
+- 🐍 Scripting and tooling with **Python**
 - ⚙️ Embedded systems with **C / STM32 / ESP32**
 - 🎮 Game development from scratch
 - 🖥️ Always exploring new technologies
@@ -32,6 +33,7 @@ Currently studying Computer Science, open to new opportunities and always learni
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
   <img src="https://img.shields.io/badge/C%2B%2B-f34b7d?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
   <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
 </p>
