@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Yuri+Bordin+%F0%9F%91%8B;Firmware+%26+Game+Developer;Building+things+close+to+the+metal" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Yuri+Bordin+%F0%9F%91%8B;Software+%26+Firmware+Developer;Always+building+something+new" alt="Typing SVG" />
 </h1>
 
 <p align="center">
@@ -13,22 +13,20 @@
 
 ## About Me
 
-```c
-typedef struct {
-    char  *name;         // "Yuri Alves Bordin"
-    char  *location;     // "Saltinho, SP — Brazil"
-    char  *focus[];      // { "Firmware", "Embedded Systems", "Game Dev" }
-    bool   open_to_work; // true
-} Developer_t;
-```
+I'm a software developer with a strong foundation in both **high-level application development** and **low-level embedded systems**.
+I work across the stack — from mobile apps and backend services to firmware and hardware abstraction layers.
+Currently studying Computer Science, open to new opportunities and always learning.
 
-I'm a firmware and game developer passionate about writing software **close to the metal**.
-I enjoy building portable, well-architected C libraries for embedded systems and creating games from scratch.
-Currently studying Computer Science and always looking for new challenges.
+- 📱 Mobile development with **Flutter**
+- ⚙️ Embedded systems with **C / STM32 / ESP32**
+- 🎮 Game development from scratch
+- 🖥️ Always exploring new technologies
 
 ---
 
 ## Tech Stack
+
+**Languages**
 
 <p align="left">
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
@@ -38,10 +36,14 @@ Currently studying Computer Science and always looking for new challenges.
   <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
 </p>
 
+**Platforms & Tools**
+
 <p align="left">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img src="https://img.shields.io/badge/STM32-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white" />
   <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
@@ -81,5 +83,5 @@ Currently studying Computer Science and always looking for new challenges.
 ---
 
 <p align="center">
-  <i>"Understand the hardware. Write the software. Ship the product."</i>
+  <i>"Write clean code. Solve real problems. Ship it."</i>
 </p>
