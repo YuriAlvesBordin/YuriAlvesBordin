@@ -53,21 +53,47 @@ Currently studying Computer Science, open to new opportunities and always learni
 
 ## Featured Projects
 
-<a href="https://github.com/YuriAlvesBordin/dc-motor-controller">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriAlvesBordin&repo=dc-motor-controller&theme=github_dark&hide_border=true" />
-</a>
-<a href="https://github.com/YuriAlvesBordin/btn">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriAlvesBordin&repo=btn&theme=github_dark&hide_border=true" />
-</a>
-
-<br /><br />
-
-<a href="https://github.com/YuriAlvesBordin/ESP32">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriAlvesBordin&repo=ESP32&theme=github_dark&hide_border=true" />
-</a>
-<a href="https://github.com/YuriAlvesBordin/Tales-of-">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriAlvesBordin&repo=Tales-of-&theme=github_dark&hide_border=true" />
-</a>
+<table>
+  <tr>
+    <td width="50%">
+      <h3>⚙️ <a href="https://github.com/YuriAlvesBordin/dc-motor-controller">dc-motor-controller</a></h3>
+      <p>Portable DC Motor Controller library in C — PID closed-loop, S-Curve ramp, stall detection, and hardware abstraction layer (Port/Adapter pattern). STM32 HAL port included.</p>
+      <p>
+        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/dc-motor-controller?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/dc-motor-controller?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+      </p>
+    </td>
+    <td width="50%">
+      <h3>🔘 <a href="https://github.com/YuriAlvesBordin/btn">btn</a></h3>
+      <p>Portable, HAL-agnostic button debounce library in C — supports short click, double click, long press and hold-repeat events. Includes STM32 HAL port.</p>
+      <p>
+        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/btn?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/btn?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>📟 <a href="https://github.com/YuriAlvesBordin/ESP32">ESP32</a></h3>
+      <p>Example codes for using LVGL with ESP32 — graphics library integration and UI development for embedded displays.</p>
+      <p>
+        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/ESP32?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/ESP32?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+      </p>
+    </td>
+    <td width="50%">
+      <h3>🎮 <a href="https://github.com/YuriAlvesBordin/Tales-of-">Tales-of-</a></h3>
+      <p>A terminal-based game using ASCII art — game logic, rendering, and input handling built from scratch in the console.</p>
+      <p>
+        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/Tales-of-?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/Tales-of-?style=flat-square&color=58A6FF" />
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
