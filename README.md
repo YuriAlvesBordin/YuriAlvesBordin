@@ -17,10 +17,10 @@ I'm a software developer with a strong foundation in both **high-level applicati
 I work across the stack — from mobile apps and backend services to firmware and hardware abstraction layers.
 Currently studying Computer Science, open to new opportunities and always learning.
 
-- 📱 Mobile development with **Flutter**
 - 🐍 Scripting and tooling with **Python**
 - ⚙️ Embedded systems with **C / STM32 / ESP32**
 - 🎮 Game development from scratch
+- 📱 Mobile development with **Flutter**
 - 🖥️ Always exploring new technologies
 
 ---
