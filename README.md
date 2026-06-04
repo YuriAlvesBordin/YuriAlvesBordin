@@ -76,12 +76,12 @@ Currently studying Computer Science, open to new opportunities and always learni
   </tr>
   <tr>
     <td width="50%">
-      <h3>📟 <a href="https://github.com/YuriAlvesBordin/ESP32">ESP32</a></h3>
-      <p>Example codes for using LVGL with ESP32 — graphics library integration and UI development for embedded displays.</p>
+      <h3>🖥️ <a href="https://github.com/YuriAlvesBordin/tauri-demo">tauri-demo</a></h3>
+      <p>Demo project using Tauri — cross-platform desktop application with Rust backend and web frontend.</p>
       <p>
-        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/ESP32?style=flat-square&color=58A6FF" />
-        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/ESP32?style=flat-square&color=58A6FF" />
-        <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/tauri-demo?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/tauri-demo?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white" />
       </p>
     </td>
     <td width="50%">
@@ -92,6 +92,18 @@ Currently studying Computer Science, open to new opportunities and always learni
         <img src="https://img.shields.io/github/forks/YuriAlvesBordin/Tales-of-?style=flat-square&color=58A6FF" />
       </p>
     </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🌐 <a href="https://github.com/YuriAlvesBordin/aframe-playground">aframe-playground</a></h3>
+      <p>Experiments with A-Frame — WebXR and 3D scene exploration directly in the browser.</p>
+      <p>
+        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/aframe-playground?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/aframe-playground?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
+      </p>
+    </td>
+    <td width="50%"></td>
   </tr>
 </table>
 
