@@ -59,18 +59,18 @@ Currently studying Computer Science, open to new opportunities and always learni
       <h3>⚙️ <a href="https://github.com/YuriAlvesBordin/dc-motor-controller">dc-motor-controller</a></h3>
       <p>Portable DC Motor Controller library in C — PID closed-loop, S-Curve ramp, stall detection, and hardware abstraction layer (Port/Adapter pattern). STM32 HAL port included.</p>
       <p>
-        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/dc-motor-controller?style=flat-square&color=58A6FF" />
-        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/dc-motor-controller?style=flat-square&color=58A6FF" />
         <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+        <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" />
+        <img src="https://img.shields.io/badge/Embedded-555?style=flat-square" />
       </p>
     </td>
     <td width="50%">
       <h3>🔘 <a href="https://github.com/YuriAlvesBordin/btn">btn</a></h3>
       <p>Portable, HAL-agnostic button debounce library in C — supports short click, double click, long press and hold-repeat events. Includes STM32 HAL port.</p>
       <p>
-        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/btn?style=flat-square&color=58A6FF" />
-        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/btn?style=flat-square&color=58A6FF" />
         <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+        <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" />
+        <img src="https://img.shields.io/badge/Embedded-555?style=flat-square" />
       </p>
     </td>
   </tr>
@@ -79,17 +79,17 @@ Currently studying Computer Science, open to new opportunities and always learni
       <h3>🖥️ <a href="https://github.com/YuriAlvesBordin/tauri-demo">tauri-demo</a></h3>
       <p>Demo project using Tauri — cross-platform desktop application with Rust backend and web frontend.</p>
       <p>
-        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/tauri-demo?style=flat-square&color=58A6FF" />
-        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/tauri-demo?style=flat-square&color=58A6FF" />
         <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white" />
+        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
+        <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white" />
       </p>
     </td>
     <td width="50%">
       <h3>🎮 <a href="https://github.com/YuriAlvesBordin/Tales-of-">Tales-of-</a></h3>
       <p>A terminal-based game using ASCII art — game logic, rendering, and input handling built from scratch in the console.</p>
       <p>
-        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/Tales-of-?style=flat-square&color=58A6FF" />
-        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/Tales-of-?style=flat-square&color=58A6FF" />
+        <img src="https://img.shields.io/badge/C++-f34b7d?style=flat-square&logo=c%2B%2B&logoColor=white" />
+        <img src="https://img.shields.io/badge/Terminal-555?style=flat-square" />
       </p>
     </td>
   </tr>
@@ -98,9 +98,9 @@ Currently studying Computer Science, open to new opportunities and always learni
       <h3>🌐 <a href="https://github.com/YuriAlvesBordin/aframe-playground">aframe-playground</a></h3>
       <p>Experiments with A-Frame — WebXR and 3D scene exploration directly in the browser.</p>
       <p>
-        <img src="https://img.shields.io/github/stars/YuriAlvesBordin/aframe-playground?style=flat-square&color=58A6FF" />
-        <img src="https://img.shields.io/github/forks/YuriAlvesBordin/aframe-playground?style=flat-square&color=58A6FF" />
         <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
+        <img src="https://img.shields.io/badge/WebXR-FF6B6B?style=flat-square" />
+        <img src="https://img.shields.io/badge/A--Frame-EF2D5E?style=flat-square" />
       </p>
     </td>
     <td width="50%"></td>
