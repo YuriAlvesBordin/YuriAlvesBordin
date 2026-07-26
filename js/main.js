@@ -20,12 +20,6 @@
     '(prefers-reduced-motion: reduce)'
   ).matches;
 
-  /**
-   * Reveal-on-scroll observer.
-   * @param {string} selector     CSS selector for elements to observe.
-   * @param {(el: Element) => void} callback  Called once per element when it enters viewport.
-   * @param {IntersectionObserverInit} [options]
-   */
   function observe(selector, callback, options) {
     const obs = new IntersectionObserver(
       (entries) => {
@@ -48,7 +42,6 @@
     const intro  = document.getElementById('intro');
     if (!intro) return;
 
-    // Skip the whole intro sequence if reduced motion is requested
     if (prefersReducedMotion) {
       intro.classList.add('gone');
       document.body.style.overflow = '';
@@ -62,11 +55,9 @@
     const skipEl = document.getElementById('intro-skip');
     const NAME   = 'Yuri Alves Bordin';
 
-    // Check if mobile - use simpler animation
     const isMobile = window.matchMedia('(max-width: 480px)').matches;
 
     if (isMobile) {
-      // Mobile: build name with words that stay together (no mid-word breaks)
       const words = NAME.split(' ');
       words.forEach((word, wi) => {
         const wordSpan = document.createElement('span');
@@ -107,6 +98,8 @@
 
       setTimeout(() => intro.classList.add('bars-in'), 50);
       setTimeout(() => {
+        // FIX: make the container visible before animating words in
+        nameEl.classList.add('visible');
         wordEls.forEach((w, i) => setTimeout(() => w.classList.add('in'), i * 120));
       }, 600);
 
@@ -121,7 +114,6 @@
     }
 
     // Desktop: per-letter animation
-    // Build the letter spans
     NAME.split('').forEach((ch) => {
       if (ch === ' ') {
         nameEl.insertAdjacentHTML('beforeend', '<span class="space"> </span>');
@@ -156,7 +148,6 @@
 
     document.body.style.overflow = 'hidden';
 
-    // Sequence
     setTimeout(() => intro.classList.add('bars-in'), 50);
     setTimeout(() => {
       nameEl.classList.add('visible');
@@ -196,7 +187,7 @@
           heroH1.appendChild(document.createTextNode(' '));
         }
       });
-      if (li < HERO_LINES - 1) {
+      if (li < HERO_LINES.length - 1) {
         heroH1.appendChild(document.createElement('br'));
       }
     });
@@ -247,8 +238,6 @@
 
   /* ---------------------------------------------------------
    * 4. About photo load state
-   *    Toggles `.loaded` on the <img> so the placeholder
-   *    hides only when the image actually loaded.
    * ------------------------------------------------------- */
   function initAboutPhoto() {
     const img = document.getElementById('about-photo-img');
