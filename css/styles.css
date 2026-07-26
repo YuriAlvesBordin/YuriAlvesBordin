@@ -128,15 +128,8 @@ a { color: inherit; }
     letter-spacing: .04em;
     padding: 0 12px;
     line-height: 1.1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0 .15em;
-    align-items: center;
   }
-  #intro-name .letter { transform: translateY(8px); display: block; }
-  #intro-name .letter.in { transform: translateY(0); }
-  #intro-name .space { width: .2em; }
+  #intro-name .letter { transform: translateY(0); }
 }
 
 #intro-tag {

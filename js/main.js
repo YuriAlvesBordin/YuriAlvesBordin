@@ -62,6 +62,55 @@
     const skipEl = document.getElementById('intro-skip');
     const NAME   = 'Yuri Alves Bordin';
 
+    // Check if mobile - use simpler animation
+    const isMobile = window.matchMedia('(max-width: 480px)').matches;
+
+    if (isMobile) {
+      // Mobile: simple fade-in for the whole name
+      nameEl.textContent = NAME;
+      nameEl.style.opacity = '0';
+      nameEl.style.transform = 'translateY(20px)';
+      nameEl.style.transition = 'opacity .8s ease, transform .8s ease';
+      
+      let done = false;
+      function finish() {
+        if (done) return;
+        done = true;
+        intro.classList.add('fade-out');
+        setTimeout(() => {
+          intro.classList.add('gone');
+          document.body.style.overflow = '';
+          triggerHero();
+        }, 1050);
+      }
+
+      skipEl.addEventListener('click', finish);
+      skipEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          finish();
+        }
+      });
+
+      document.body.style.overflow = 'hidden';
+
+      setTimeout(() => intro.classList.add('bars-in'), 50);
+      setTimeout(() => {
+        nameEl.style.opacity = '1';
+        nameEl.style.transform = 'translateY(0)';
+      }, 600);
+
+      setTimeout(() => {
+        lineEl.classList.add('expand');
+        tagEl.classList.add('visible');
+      }, 800);
+
+      setTimeout(() => skipEl.classList.add('visible'), 1400);
+      setTimeout(finish, 2800);
+      return;
+    }
+
+    // Desktop: per-letter animation
     // Build the letter spans
     NAME.split('').forEach((ch) => {
       if (ch === ' ') {
