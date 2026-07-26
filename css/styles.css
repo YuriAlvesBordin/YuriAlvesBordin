@@ -59,6 +59,11 @@ img { max-width: 100%; display: block; }
 
 a { color: inherit; }
 
+/* Remove tap highlight on mobile for interactive elements */
+a, button, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* ── 3. Skip link ────────────────────────────────────────── */
 .skip-link {
   position: absolute;
@@ -186,6 +191,8 @@ a { color: inherit; }
   pointer-events: auto;
   cursor: pointer;
   user-select: none;
+  /* larger tap area on mobile */
+  padding: 12px 16px;
 }
 #intro-skip.visible { opacity: 1; }
 #intro-skip:hover,
@@ -193,8 +200,9 @@ a { color: inherit; }
 
 @media (max-width: 480px) {
   #intro-skip {
-    bottom: 16px; right: 16px;
+    bottom: 12px; right: 12px;
     font-size: 10px;
+    padding: 14px 18px;
   }
 }
 
@@ -277,13 +285,16 @@ section { padding: 100px 24px; }
 .btn-group.in { opacity: 1; transform: none; }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 26px;
   font-size: 15px;
   font-weight: 500;
   border-radius: 980px;
   text-decoration: none;
   transition: opacity .2s, transform .15s;
+  min-height: 44px;
 }
 .btn:hover  { opacity: .82; }
 .btn:active { transform: scale(.97); }
@@ -373,7 +384,7 @@ section { padding: 100px 24px; }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 24px;
 }
 
@@ -488,6 +499,7 @@ section { padding: 100px 24px; }
   border: 1px solid var(--accent);
   border-radius: 980px;
   transition: background .15s, color .15s, transform .1s;
+  min-height: 44px;
 }
 .btn-link:hover {
   background: var(--accent);
@@ -670,6 +682,7 @@ section { padding: 100px 24px; }
   transition: color .2s, border-color .2s, transform .15s;
   opacity: 0;
   transform: translateY(14px);
+  min-height: 44px;
 }
 .contact-links a.in { opacity: 1; transform: none; }
 .contact-links a:hover {
@@ -727,13 +740,13 @@ footer {
 /* Tablet landscape and below (≤1024px) */
 @media (max-width: 1024px) {
   section { padding: 80px 20px; }
-  .inner { max-width: 100%; padding: 0 20px; }
-  
+  .inner { max-width: 100%; }
+
   #hero { padding: 120px 20px 100px; }
   #hero h1 { font-size: clamp(40px, 10vw, 64px); }
-  
-  .projects-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-  
+
+  .projects-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .photo-frame { max-width: 320px; margin: 0 auto; }
 }
@@ -741,83 +754,96 @@ footer {
 /* Tablet portrait and mobile landscape (≤768px) */
 @media (max-width: 768px) {
   section { padding: 60px 16px; }
-  
+
   #hero { padding: 100px 16px 80px; }
   #hero h1 { font-size: clamp(36px, 12vw, 56px); }
   #hero p { font-size: clamp(16px, 4vw, 18px); max-width: 100%; }
   .btn { padding: 14px 28px; font-size: 16px; }
-  
-  .projects-grid { 
-    grid-template-columns: 1fr; 
+
+  .projects-grid {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .project-body { padding: 20px; }
   .project-footer { padding: 14px 20px; flex-direction: column; align-items: stretch; }
   .btn-link { justify-content: center; }
-  
+
   .tech-icons { gap: 24px 28px; }
   .tech-item img,
   .tech-item svg { width: 48px; height: 48px; }
-  
+
   .about-content h2 { font-size: clamp(26px, 6vw, 36px); }
   .about-content p { font-size: 15px; }
-  
+
   .contact-links { gap: 12px; }
-  .contact-links a { width: 100%; max-width: 280px; justify-content: center; }
+  .contact-links a { justify-content: center; }
 }
 
 /* Mobile portrait (≤480px) */
 @media (max-width: 480px) {
-  section { padding: 50px 12px; }
-  
-  #hero { padding: 80px 12px 60px; }
+  section { padding: 50px 16px; }
+
+  #hero { padding: 80px 16px 60px; }
   #hero h1 { font-size: clamp(32px, 14vw, 48px); line-height: 1.1; }
   #hero p { font-size: 15px; }
   .btn { padding: 12px 24px; font-size: 15px; }
-  
+
+  .btn-group { flex-direction: column; align-items: stretch; }
+  .btn-group .btn { text-align: center; }
+
   .section-header { margin-bottom: 40px; }
   .section-header h2 { font-size: clamp(24px, 8vw, 36px); }
   .section-header p { font-size: 15px; }
-  
+
   .project-card { border-radius: 10px; }
   .project-thumb { aspect-ratio: 16/9; }
   .project-body { padding: 16px; }
   .project-card h3 { font-size: 17px; }
   .project-card p { font-size: 13px; }
-  .project-stats { gap: 12px; flex-direction: column; align-items: flex-start; }
+  .project-stats { gap: 12px; }
   .stat { font-size: 11px; }
-  
-  .tech-icons { gap: 20px 24px; }
+
+  .tech-icons { gap: 16px 20px; }
   .tech-item img,
-  .tech-item svg { width: 44px; height: 44px; }
+  .tech-item svg { width: 40px; height: 40px; }
   .tech-item span { font-size: 10px; }
-  
+
   .about-items { gap: 12px; }
   .about-item { padding-left: 12px; }
   .about-item span { font-size: 10px; }
   .about-item p { font-size: 14px; }
-  
+
   .photo-frame { border-radius: 12px; }
   .photo-placeholder span { font-size: 10px; }
-  
-  footer { padding: 24px 12px; font-size: 11px; }
+
+  footer { padding: 24px 16px; font-size: 11px; }
+}
+
+/* Very small phones (≤360px) */
+@media (max-width: 360px) {
+  #hero h1 { font-size: clamp(28px, 16vw, 38px); }
+  .tech-icons { gap: 14px 16px; }
+  .tech-item img,
+  .tech-item svg { width: 36px; height: 36px; }
+  .project-footer { padding: 12px 14px; }
+  .btn-link { font-size: 12px; padding: 8px 12px; }
 }
 
 /* Large desktop (≥1440px) */
 @media (min-width: 1440px) {
   :root { --max: 1100px; }
   section { padding: 120px 40px; }
-  
+
   #hero { padding: 200px 40px 160px; }
   #hero h1 { font-size: clamp(56px, 6vw, 96px); }
   #hero p { font-size: 20px; max-width: 640px; }
-  
+
   .projects-grid { gap: 32px; }
   .project-body { padding: 32px; }
   .project-card h3 { font-size: 21px; }
   .project-card p { font-size: 15px; }
-  
+
   .about-grid { gap: 80px; }
   .about-content h2 { font-size: clamp(36px, 3vw, 48px); }
   .about-content p { font-size: 18px; }
