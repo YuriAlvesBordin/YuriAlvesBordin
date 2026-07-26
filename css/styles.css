@@ -136,8 +136,12 @@ a { color: inherit; }
   }
   #intro-name .word {
     display: inline-block;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .6s ease, transform .6s ease;
     white-space: nowrap;
   }
+  #intro-name .word.in { opacity: 1; transform: translateY(0); }
   #intro-name .space { width: .2em; }
 }
 

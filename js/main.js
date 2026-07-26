@@ -72,9 +72,6 @@
         const wordSpan = document.createElement('span');
         wordSpan.className = 'word';
         wordSpan.textContent = word;
-        wordSpan.style.opacity = '0';
-        wordSpan.style.transform = 'translateY(20px)';
-        wordSpan.style.transition = 'opacity .6s ease, transform .6s ease';
         nameEl.appendChild(wordSpan);
         if (wi < words.length - 1) {
           const space = document.createElement('span');
@@ -110,10 +107,7 @@
 
       setTimeout(() => intro.classList.add('bars-in'), 50);
       setTimeout(() => {
-        wordEls.forEach((w, i) => setTimeout(() => {
-          w.style.opacity = '1';
-          w.style.transform = 'translateY(0)';
-        }, i * 120));
+        wordEls.forEach((w, i) => setTimeout(() => w.classList.add('in'), i * 120));
       }, 600);
 
       setTimeout(() => {
