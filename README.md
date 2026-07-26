@@ -1,127 +1,226 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Yuri+Bordin+%F0%9F%91%8B;Software+%26+Firmware+Developer;Always+building+something+new" alt="Typing SVG" />
-</h1>
+# Yuri Alves Bordin — Portfolio
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/yuri-bordin" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=YuriAlvesBordin&style=for-the-badge&color=58A6FF" />
-</p>
+Personal portfolio site, built with vanilla HTML, CSS, and JavaScript.
+Live at **<https://yurialvesbordin.github.io/>** (replace with your own GitHub Pages URL).
+
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Made with HTML](https://img.shields.io/badge/Made%20with-HTML%2FCSS%2FJS-orange)
 
 ---
 
-## About Me
+## Highlights
 
-I'm a software developer with a strong foundation in both **high-level application development** and **low-level embedded systems**.
-I work across the stack — from mobile apps and backend services to firmware and hardware abstraction layers.
-Currently studying Computer Science, open to new opportunities and always learning.
-
-- 🐍 Scripting and tooling with **Python**
-- ⚙️ Embedded systems with **C / STM32 / ESP32**
-- 🎮 Game development from scratch
-- 📱 Mobile development with **Flutter**
-- 🖥️ Always exploring new technologies
+- **No build step** — open `index.html` and ship.
+- **Dark / light mode** that follows the OS preference.
+- **Accessible**: skip link, focus styles, semantic landmarks, `prefers-reduced-motion` support.
+- **SEO-ready**: Open Graph + Twitter cards, JSON-LD `Person` schema, `sitemap.xml`, `robots.txt`.
+- **PWA-installable**: `manifest.json` + icons, installable to home screen.
+- **Intro animation** that gracefully skips itself when reduced motion is requested.
+- **CI/CD via GitHub Actions** — every push to `main` deploys to GitHub Pages automatically.
 
 ---
 
-## Tech Stack
+## Project structure
 
-**Languages**
-
-<p align="left">
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-f34b7d?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
-  <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
-</p>
-
-**Platforms & Tools**
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/STM32-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white" />
-  <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-</p>
-
----
-
-## Featured Projects
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3>⚙️ <a href="https://github.com/YuriAlvesBordin/dc-motor-controller">dc-motor-controller</a></h3>
-      <p>Portable DC Motor Controller library in C — PID closed-loop, S-Curve ramp, stall detection, and hardware abstraction layer (Port/Adapter pattern). STM32 HAL port included.</p>
-      <p>
-        <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
-        <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" />
-        <img src="https://img.shields.io/badge/Embedded-555?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%">
-      <h3>🔘 <a href="https://github.com/YuriAlvesBordin/btn">btn</a></h3>
-      <p>Portable, HAL-agnostic button debounce library in C — supports short click, double click, long press and hold-repeat events. Includes STM32 HAL port.</p>
-      <p>
-        <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
-        <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" />
-        <img src="https://img.shields.io/badge/Embedded-555?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🖥️ <a href="https://github.com/YuriAlvesBordin/tauri-demo">tauri-demo</a></h3>
-      <p>Demo project using Tauri — cross-platform desktop application with Rust backend and web frontend.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white" />
-        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
-        <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%">
-      <h3>🎮 <a href="https://github.com/YuriAlvesBordin/Tales-of-">Tales-of-</a></h3>
-      <p>A terminal-based game using ASCII art — game logic, rendering, and input handling built from scratch in the console.</p>
-      <p>
-        <img src="https://img.shields.io/badge/C++-f34b7d?style=flat-square&logo=c%2B%2B&logoColor=white" />
-        <img src="https://img.shields.io/badge/Terminal-555?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🌐 <a href="https://github.com/YuriAlvesBordin/aframe-playground">aframe-playground</a></h3>
-      <p>Experiments with A-Frame — WebXR and 3D scene exploration directly in the browser.</p>
-      <p>
-        <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
-        <img src="https://img.shields.io/badge/WebXR-FF6B6B?style=flat-square" />
-        <img src="https://img.shields.io/badge/A--Frame-EF2D5E?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%"></td>
-  </tr>
-</table>
+```
+.
+├── .github/workflows/deploy.yml   # Auto-deploy to GitHub Pages
+├── assets/
+│   ├── favicon.svg                # Vector favicon
+│   ├── favicon.ico                # Raster favicon (multi-size)
+│   ├── og-image.png               # Social share preview (1200x630)
+│   ├── photo.jpg                  # <-- Replace with your photo
+│   └── icons/                     # PWA / apple-touch icons
+├── css/
+│   └── styles.css                 # All styles
+├── js/
+│   └── main.js                    # Intro + scroll-reveal logic
+├── index.html                     # Main page
+├── manifest.json                  # PWA manifest
+├── robots.txt                     # SEO
+├── sitemap.xml                    # SEO
+├── CNAME                          # Optional custom domain
+└── README.md                      # This file
+```
 
 ---
 
-## GitHub Stats
+## Run locally
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=YuriAlvesBordin&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YuriAlvesBordin&layout=compact&theme=github_dark&hide_border=true&langs_count=6" />
-</p>
+No build tools required. Pick any of the options below.
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=YuriAlvesBordin&theme=github-dark-blue&hide_border=true" />
-</p>
+### Option A — Python (already installed on macOS/Linux)
+
+```bash
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+### Option B — Node.js
+
+```bash
+npx serve .
+# or: npx http-server -p 8000
+```
+
+### Option C — VS Code
+
+Install the **Live Server** extension, right-click `index.html` → **Open with Live Server**.
+
+> Opening `index.html` directly with `file://` works for visual testing, but
+> some browser features (service workers, certain CDN caching) behave better
+> over HTTP.
 
 ---
 
-<p align="center">
-  <i>"Write clean code. Solve real problems. Ship it."</i>
-</p>
+## Customize
+
+### 1. Personal info & social links
+
+Edit `index.html` and update:
+
+- `<title>`, meta tags (`description`, `og:*`, `twitter:*`)
+- The `<script type="application/ld+json">` JSON-LD block (URL, `sameAs` links)
+- The `#hero` headline copy and subtitle
+- The `#contact` links (GitHub, email, LinkedIn)
+- The `#about` paragraphs and `about-items` (education, location, languages)
+
+### 2. Hero headline animation
+
+The hero headline is built dynamically in `js/main.js`:
+
+```js
+const HERO_LINES = ['Like water shape the code', 'to solve the problem.'];
+```
+
+Change the strings (or add/remove lines) to update the animated headline.
+
+### 3. Intro name
+
+The intro overlay types out the name defined in `js/main.js`:
+
+```js
+const NAME = 'Yuri Alves Bordin';
+```
+
+### 4. Skills
+
+In `index.html`, find the `#skills` section. Each tech is a `<div class="tech-item">`
+with an `<img>` (or inline `<svg>`) and a `<span>` label. Icons are loaded from
+[devicon](https://devicon.dev) and [simpleicons.org](https://simpleicons.org) —
+swap the `src` to change any icon.
+
+### 5. Projects
+
+In `index.html`, find the `#projects` section. Each card is an
+`<article class="project-card from-left|from-right">`. Duplicate an article to
+add a project, update the tag, title, description, and link.
+
+### 6. Your photo
+
+Replace `assets/photo.jpg` with a portrait photo (recommended 3:4 aspect ratio,
+at least 600×800 px). If the file is missing or fails to load, a placeholder is
+shown automatically — no code change needed.
+
+### 7. Social preview image
+
+Replace `assets/og-image.png` (1200×630) with your own preview. A reference SVG
+is at `assets/og-image.svg` you can edit and re-export.
+
+### 8. PWA / theme color
+
+Edit `manifest.json` and the `<meta name="theme-color">` tags in `index.html`
+to change the install theme color.
+
+### 9. Custom domain (optional)
+
+If you own a custom domain (e.g. `yuribordin.dev`):
+
+1. Create a `CNAME` file at the repo root containing your domain (one line, no protocol):
+   ```
+   yuribordin.dev
+   ```
+2. In your DNS provider, add an `ALIAS`/`ANAME` record pointing to your
+   `<username>.github.io` URL (or an `A` record to GitHub Pages IPs — see
+   [GitHub's docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
+3. Push, then in **Settings → Pages** of the repo, enter your custom domain and
+   enable **Enforce HTTPS**.
+
+A sample `CNAME` file is already included (commented out — uncomment or replace).
+
+---
+
+## Deploy to GitHub Pages
+
+This repo ships with a GitHub Actions workflow that auto-deploys on every push
+to `main` (or `master`).
+
+### One-time setup
+
+1. **Create the repository** on GitHub (e.g. `YuriAlvesBordin.github.io` if you
+   want it at the root of `https://yurialvesbordin.github.io/`, or any name
+   like `portfolio` for `https://yurialvesbordin.github.io/portfolio/`).
+
+2. **Push this project** to the new repo:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial portfolio"
+   git branch -M main
+   git remote add origin git@github.com:YuriAlvesBordin/<repo-name>.git
+   git push -u origin main
+   ```
+
+3. **Enable Pages from Actions**:
+   - Go to **Settings → Pages** in the repo.
+   - Under **Build and deployment → Source**, choose **GitHub Actions**.
+
+4. The first workflow run will trigger automatically. Watch it under the
+   **Actions** tab. When it finishes, your site is live at the URL shown in
+   **Settings → Pages**.
+
+### Subsequent updates
+
+Just push to `main` — the workflow handles the rest. The site typically goes
+live within 30–60 seconds of a green build.
+
+### Manual deploy
+
+You can also trigger a deploy manually from **Actions → Deploy to GitHub Pages →
+Run workflow**.
+
+---
+
+## Regenerating raster assets
+
+If you want to rebuild `favicon.ico`, `og-image.png`, PWA icons, or the
+placeholder photo, run:
+
+```bash
+pip install Pillow
+python3 ../scripts/generate_assets.py   # adjust path as needed
+```
+
+> The script lives in `scripts/generate_assets.py` (sibling of this `portfolio/`
+> folder in the source layout). For a published repo you may copy it inside the
+> repo under `tools/` or remove it once you've customized the assets manually.
+
+---
+
+## Tech stack
+
+- **HTML5** — semantic, single page.
+- **CSS** — custom properties, `color-mix()`, `clamp()`, container-friendly grid.
+- **Vanilla JS (ES6+)** — `IntersectionObserver`, no dependencies.
+- **GitHub Actions** — official `actions/deploy-pages` workflow.
+
+No frameworks. No bundlers. No `node_modules`. Just files.
+
+---
+
+## License
+
+[MIT](./LICENSE) — © Yuri Alves Bordin.
+
+Feel free to fork and adapt for your own portfolio. A heads-up or credit is
+appreciated but not required.
