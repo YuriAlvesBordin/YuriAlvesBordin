@@ -116,7 +116,7 @@
   /* ---------------------------------------------------------
    * 2. Hero headline build + reveal
    * ------------------------------------------------------- */
-  const HERO_LINES = ['Like water shape the code', 'to solve the problem.'];
+  const HERO_LINES = ['I shape the code', 'to solve the problem.'];
 
   function buildHeroHeadline() {
     const heroH1 = document.querySelector('#hero h1');
