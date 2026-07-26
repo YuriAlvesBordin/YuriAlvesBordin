@@ -14,7 +14,8 @@
    9. About
    10. Contact
    11. Footer
-   12. Reduced-motion fallbacks
+   12. Reduced motion
+   13. Responsive breakpoints
    ============================================================ */
 
 /* ── 1. Design tokens ────────────────────────────────────── */
@@ -406,6 +407,7 @@ section { padding: 100px 24px; }
 
 .project-stats {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   margin-bottom: 16px;
   padding-top: 16px;
@@ -422,8 +424,10 @@ section { padding: 100px 24px; }
 
 .project-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   padding: 16px 24px;
   border-top: 1px solid var(--border);
   background: color-mix(in srgb, var(--subtle) 80%, transparent);
@@ -673,5 +677,115 @@ footer {
     opacity: 1 !important;
     transform: none !important;
     translate: 0 0 !important;
+  }
+}
+
+/* ── 13. Responsive breakpoints ──────────────────────────── */
+/* Tablet landscape and below (≤1024px) */
+@media (max-width: 1024px) {
+  section { padding: 80px 20px; }
+  .inner { max-width: 100%; padding: 0 20px; }
+  
+  #hero { padding: 120px 20px 100px; }
+  #hero h1 { font-size: clamp(40px, 10vw, 64px); }
+  
+  .projects-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .photo-frame { max-width: 320px; margin: 0 auto; }
+}
+
+/* Tablet portrait and mobile landscape (≤768px) */
+@media (max-width: 768px) {
+  section { padding: 60px 16px; }
+  
+  #hero { padding: 100px 16px 80px; }
+  #hero h1 { font-size: clamp(36px, 12vw, 56px); }
+  #hero p { font-size: clamp(16px, 4vw, 18px); max-width: 100%; }
+  .btn { padding: 14px 28px; font-size: 16px; }
+  
+  .projects-grid { 
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  
+  .project-body { padding: 20px; }
+  .project-footer { padding: 14px 20px; flex-direction: column; align-items: stretch; }
+  .btn-link { justify-content: center; }
+  
+  .tech-icons { gap: 24px 28px; }
+  .tech-item img,
+  .tech-item svg { width: 48px; height: 48px; }
+  
+  .about-content h2 { font-size: clamp(26px, 6vw, 36px); }
+  .about-content p { font-size: 15px; }
+  
+  .contact-links { gap: 12px; }
+  .contact-links a { width: 100%; max-width: 280px; justify-content: center; }
+}
+
+/* Mobile portrait (≤480px) */
+@media (max-width: 480px) {
+  section { padding: 50px 12px; }
+  
+  #hero { padding: 80px 12px 60px; }
+  #hero h1 { font-size: clamp(32px, 14vw, 48px); line-height: 1.1; }
+  #hero p { font-size: 15px; }
+  .btn { padding: 12px 24px; font-size: 15px; }
+  
+  .section-header { margin-bottom: 40px; }
+  .section-header h2 { font-size: clamp(24px, 8vw, 36px); }
+  .section-header p { font-size: 15px; }
+  
+  .project-card { border-radius: 10px; }
+  .project-thumb { aspect-ratio: 16/9; }
+  .project-body { padding: 16px; }
+  .project-card h3 { font-size: 17px; }
+  .project-card p { font-size: 13px; }
+  .project-stats { gap: 12px; flex-direction: column; align-items: flex-start; }
+  .stat { font-size: 11px; }
+  
+  .tech-icons { gap: 20px 24px; }
+  .tech-item img,
+  .tech-item svg { width: 44px; height: 44px; }
+  .tech-item span { font-size: 10px; }
+  
+  .about-items { gap: 12px; }
+  .about-item { padding-left: 12px; }
+  .about-item span { font-size: 10px; }
+  .about-item p { font-size: 14px; }
+  
+  .photo-frame { border-radius: 12px; }
+  .photo-placeholder span { font-size: 10px; }
+  
+  footer { padding: 24px 12px; font-size: 11px; }
+}
+
+/* Large desktop (≥1440px) */
+@media (min-width: 1440px) {
+  :root { --max: 1100px; }
+  section { padding: 120px 40px; }
+  
+  #hero { padding: 200px 40px 160px; }
+  #hero h1 { font-size: clamp(56px, 6vw, 96px); }
+  #hero p { font-size: 20px; max-width: 640px; }
+  
+  .projects-grid { gap: 32px; }
+  .project-body { padding: 32px; }
+  .project-card h3 { font-size: 21px; }
+  .project-card p { font-size: 15px; }
+  
+  .about-grid { gap: 80px; }
+  .about-content h2 { font-size: clamp(36px, 3vw, 48px); }
+  .about-content p { font-size: 18px; }
+}
+
+/* High DPI / Retina */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .tech-item img,
+  .tech-item svg,
+  .photo-frame img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
 }
