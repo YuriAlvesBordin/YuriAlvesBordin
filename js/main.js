@@ -204,19 +204,10 @@
   }
 
   /* ---------------------------------------------------------
-   * 5. Footer year
-   * ------------------------------------------------------- */
-  function initFooterYear() {
-    const yearEl = document.getElementById('year');
-    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-  }
-
-  /* ---------------------------------------------------------
    * Boot
    * ------------------------------------------------------- */
   buildHeroHeadline();
   initIntro();
   initScrollReveal();
   initAboutPhoto();
-  initFooterYear();
 })();
