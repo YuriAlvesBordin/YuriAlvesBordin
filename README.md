@@ -18,8 +18,4 @@
 
 </td>
 </tr>
-</table>
-
-<sub>Firmware · Embedded · Games</sub>
-
 </div>
