@@ -66,12 +66,26 @@
     const isMobile = window.matchMedia('(max-width: 480px)').matches;
 
     if (isMobile) {
-      // Mobile: simple fade-in for the whole name
-      nameEl.textContent = NAME;
-      nameEl.style.opacity = '0';
-      nameEl.style.transform = 'translateY(20px)';
-      nameEl.style.transition = 'opacity .8s ease, transform .8s ease';
-      
+      // Mobile: build name with words that stay together (no mid-word breaks)
+      const words = NAME.split(' ');
+      words.forEach((word, wi) => {
+        const wordSpan = document.createElement('span');
+        wordSpan.className = 'word';
+        wordSpan.textContent = word;
+        wordSpan.style.opacity = '0';
+        wordSpan.style.transform = 'translateY(20px)';
+        wordSpan.style.transition = 'opacity .6s ease, transform .6s ease';
+        nameEl.appendChild(wordSpan);
+        if (wi < words.length - 1) {
+          const space = document.createElement('span');
+          space.className = 'space';
+          space.textContent = ' ';
+          nameEl.appendChild(space);
+        }
+      });
+
+      const wordEls = nameEl.querySelectorAll('.word');
+
       let done = false;
       function finish() {
         if (done) return;
@@ -96,8 +110,10 @@
 
       setTimeout(() => intro.classList.add('bars-in'), 50);
       setTimeout(() => {
-        nameEl.style.opacity = '1';
-        nameEl.style.transform = 'translateY(0)';
+        wordEls.forEach((w, i) => setTimeout(() => {
+          w.style.opacity = '1';
+          w.style.transform = 'translateY(0)';
+        }, i * 120));
       }, 600);
 
       setTimeout(() => {

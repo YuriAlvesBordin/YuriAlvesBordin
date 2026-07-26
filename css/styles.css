@@ -128,8 +128,17 @@ a { color: inherit; }
     letter-spacing: .04em;
     padding: 0 12px;
     line-height: 1.1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .15em;
   }
-  #intro-name .letter { transform: translateY(0); }
+  #intro-name .word {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  #intro-name .space { width: .2em; }
 }
 
 #intro-tag {
