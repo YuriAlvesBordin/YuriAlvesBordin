@@ -3,7 +3,7 @@
   <p>Developer and CS student based in Sao Paulo, Brazil.<br>I build things across the full stack, from bare-metal firmware to desktop apps and web interfaces.</p>
   <a href="https://yurialvesbordin.github.io/YuriAlvesBordin/">Portfolio</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/yurialvesbordin/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="mailto:yuribordin@example.com">Email</a>
+  <a href="mailto:yurialvesbordin@gmail.com">Email</a>
 </div>
 
 ---
