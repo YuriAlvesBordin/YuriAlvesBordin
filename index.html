@@ -160,6 +160,8 @@
       <p>Some of what I've built and shipped.</p>
     </div>
     <div class="projects-grid">
+
+      <!-- btn -->
       <article class="project-card from-left" data-repo="YuriAlvesBordin/btn">
         <div class="project-thumb">
           <img src="assets/projects/btn.png" alt="btn project preview" loading="lazy" />
@@ -170,87 +172,115 @@
             <span class="lang-tag">C</span>
           </div>
           <h3>btn</h3>
-          <p>HAL-agnostic button debounce library in C. Supports press, hold, double-click, long-press. STM32 HAL port included. Zero dependencies.</p>
+          <p>Portable, HAL-agnostic button debounce library in C. Supports short click, double click, long press and hold-repeat events. Includes a ready-to-use STM32 HAL port. Zero dynamic allocation.</p>
           <div class="project-stats">
-            <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.55v-1.8c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.7-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.7 1.03 1.59 1.03 2.7 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.72c0 .31.16.69.67.55C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg> 42</span>
-            <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.55v-1.8c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.7-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.7 1.03 1.59 1.03 2.7 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.72c0 .31.16.69.67.55C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg> 8</span>
+            <span class="stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              1
+            </span>
+            <span class="stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 5C7 3.34 8.34 2 10 2h4c1.66 0 3 1.34 3 3v1h2a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2V5z"/></svg>
+              1 fork
+            </span>
           </div>
         </div>
         <div class="project-footer">
           <a class="btn-link" href="https://github.com/YuriAlvesBordin/btn" target="_blank" rel="noopener">View source</a>
-          <a class="btn-link" href="https://github.com/YuriAlvesBordin/btn" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a class="btn-link" href="https://github.com/YuriAlvesBordin/btn" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
         </div>
       </article>
 
-      <article class="project-card from-right" data-repo="YuriAlvesBordin/gx">
+      <!-- dc-motor-controller -->
+      <article class="project-card from-right" data-repo="YuriAlvesBordin/dc-motor-controller">
         <div class="project-thumb">
-          <img src="assets/projects/gx.png" alt="gx project preview" loading="lazy" />
+          <img src="assets/projects/dc-motor-controller.png" alt="dc-motor-controller project preview" loading="lazy" />
         </div>
         <div class="project-body">
           <div class="project-meta">
             <span class="tag">Embedded C</span>
             <span class="lang-tag">C</span>
           </div>
-          <h3>gx</h3>
-          <p>Embedded graphics stack in C for monochromatic displays. Framebuffers, primitives, fonts, sprites — no dynamic allocation, bare-metal ready. Works on SSD1306, SH1106, ST7920.</p>
+          <h3>dc-motor-controller</h3>
+          <p>Portable DC motor controller library in C. Supports both open-loop and closed-loop (PID) control. HAL-agnostic design — runs on STM32, ESP32 or any platform with a PWM driver.</p>
           <div class="project-stats">
-            <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.55v-1.8c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.7-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.7 1.03 1.59 1.03 2.7 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.72c0 .31.16.69.67.55C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg> 31</span>
-            <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.55v-1.8c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.7-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.7 1.03 1.59 1.03 2.7 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.72c0 .31.16.69.67.55C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg> 5</span>
+            <span class="stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              1
+            </span>
+            <span class="stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 5C7 3.34 8.34 2 10 2h4c1.66 0 3 1.34 3 3v1h2a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2V5z"/></svg>
+              1 fork
+            </span>
           </div>
         </div>
         <div class="project-footer">
-          <a class="btn-link" href="https://github.com/YuriAlvesBordin/gx" target="_blank" rel="noopener">View source</a>
-          <a class="btn-link" href="https://github.com/YuriAlvesBordin/gx" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a class="btn-link" href="https://github.com/YuriAlvesBordin/dc-motor-controller" target="_blank" rel="noopener">View source</a>
+          <a class="btn-link" href="https://github.com/YuriAlvesBordin/dc-motor-controller" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
         </div>
       </article>
 
-      <article class="project-card from-left" data-repo="YuriAlvesBordin/OpenDataDash">
+      <!-- agenda-medica -->
+      <article class="project-card from-left" data-repo="YuriAlvesBordin/agenda-medica">
         <div class="project-thumb">
-          <img src="assets/projects/opendatadash.png" alt="OpenDataDash project preview" loading="lazy" />
+          <img src="assets/projects/agenda-medica.png" alt="agenda-medica project preview" loading="lazy" />
         </div>
         <div class="project-body">
           <div class="project-meta">
-            <span class="tag">Rust · JS</span>
-            <span class="lang-tag">Rust</span>
-            <span class="lang-tag">TypeScript</span>
-            <span class="lang-tag">Tauri</span>
+            <span class="tag">Web · Backend</span>
+            <span class="lang-tag">Python</span>
+            <span class="lang-tag">Flask</span>
+            <span class="lang-tag">Docker</span>
           </div>
-          <h3>OpenDataDash</h3>
-          <p>Cross-platform desktop dashboard built with Tauri v2 (Rust + TypeScript/React). Real-time data visualization, plugin architecture, native system integration. MIT licensed.</p>
+          <h3>agenda-medica</h3>
+          <p>Technical challenge: full-stack medical scheduling web app built with Flask, SQLite and Docker. REST API with appointment management, patient records and a clean web interface.</p>
           <div class="project-stats">
-            <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.55v-1.8c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.7-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.7 1.03 1.59 1.03 2.7 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.72c0 .31.16.69.67.55C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg> 127</span>
-            <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.55v-1.8c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.7-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.7 1.03 1.59 1.03 2.7 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.72c0 .31.16.69.67.55C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg> 23</span>
+            <span class="stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              1
+            </span>
           </div>
         </div>
         <div class="project-footer">
-          <a class="btn-link" href="https://github.com/YuriAlvesBordin/OpenDataDash" target="_blank" rel="noopener">View source</a>
-          <a class="btn-link" href="https://github.com/YuriAlvesBordin/OpenDataDash" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a class="btn-link" href="https://github.com/YuriAlvesBordin/agenda-medica" target="_blank" rel="noopener">View source</a>
+          <a class="btn-link" href="https://github.com/YuriAlvesBordin/agenda-medica" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
         </div>
       </article>
 
-      <article class="project-card from-right" data-repo="YuriAlvesBordin/smartwatch-tcc">
+      <!-- webxr-demos -->
+      <article class="project-card from-right" data-repo="YuriAlvesBordin/webxr-demos">
         <div class="project-thumb">
-          <img src="assets/projects/smartwatch-tcc.png" alt="TCC Smartwatch project preview" loading="lazy" />
+          <img src="assets/projects/webxr-demos.png" alt="webxr-demos project preview" loading="lazy" />
         </div>
         <div class="project-body">
           <div class="project-meta">
-            <span class="tag">ESP32 · Academic</span>
-            <span class="lang-tag">C</span>
-            <span class="lang-tag">ESP-IDF</span>
-            <span class="lang-tag">FreeRTOS</span>
+            <span class="tag">WebXR · 3D</span>
+            <span class="lang-tag">HTML</span>
+            <span class="lang-tag">A-Frame</span>
+            <span class="lang-tag">AR.js</span>
           </div>
-          <h3>TCC — Modular Smartwatch</h3>
-          <p>Modular smartwatch on ESP32-P4 with AMOLED display and I²C module expansion (sensors, haptics, comms). Custom FreeRTOS firmware, LVGL UI, BLE companion app. Capstone at EEP Piracicaba.</p>
+          <h3>webxr-demos</h3>
+          <p>Interactive WebXR demos with A-Frame: 3D primitive morphing, an atomic model simulation and a drag-and-drop 3D model viewer with AR mode via AR.js. Built as an academic Computer Graphics project.</p>
           <div class="project-stats">
-            <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.55v-1.8c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.7-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.7 1.03 1.59 1.03 2.7 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.72c0 .31.16.69.67.55C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10z"/></svg> 89</span>
-            <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.55v-1.8c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.7-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.7 1.03 1.59 1.03 2.7 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85v2.72c0 .31.16.69.67.55C19.14 20.16 22 16.42 22 12c0-6.63-5.37-12-12-12z"/></svg> 14</span>
+            <span class="stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              0
+            </span>
           </div>
         </div>
         <div class="project-footer">
-          <a class="btn-link" href="https://github.com/YuriAlvesBordin/smartwatch-tcc" target="_blank" rel="noopener">View source</a>
-          <a class="btn-link" href="https://github.com/YuriAlvesBordin/smartwatch-tcc" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a class="btn-link" href="https://github.com/YuriAlvesBordin/webxr-demos" target="_blank" rel="noopener">View source</a>
+          <a class="btn-link" href="https://github.com/YuriAlvesBordin/webxr-demos" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
         </div>
       </article>
+
     </div>
   </div>
 </section>
