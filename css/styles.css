@@ -213,26 +213,35 @@ section { padding: 100px 24px; }
   padding: 160px 24px 140px;
   text-align: center;
   position: relative;
-  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
-  background-size: 28px 28px;
+  /* Background landscape image */
+  background-image: url('assets/hero.jpg');
+  background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
+  /* Fallback color while image loads */
+  background-color: #0a0a0a;
 }
+/* Dark overlay for text legibility */
 #hero::before {
   content: '';
   position: absolute; inset: 0;
   pointer-events: none;
-  background: radial-gradient(ellipse 80% 80% at 50% 50%,
-    transparent 30%,
-    var(--bg) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.35) 50%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
 }
 #hero > * { position: relative; }
 
+/* Hero text — always white over the image */
 #hero .eyebrow {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: .08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 20px;
   opacity: 0; transform: translateY(-18px);
   transition: opacity .6s ease, transform .6s ease;
@@ -244,9 +253,10 @@ section { padding: 100px 24px; }
   font-weight: 700;
   letter-spacing: -.04em;
   line-height: 1.05;
-  color: var(--fg);
+  color: #ffffff;
   margin-bottom: 24px;
   overflow: hidden;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.4);
 }
 #hero h1 .word {
   display: inline-block;
@@ -263,12 +273,13 @@ section { padding: 100px 24px; }
 
 #hero p {
   font-size: clamp(17px, 2.5vw, 21px);
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.72);
   max-width: 560px;
   margin: 0 auto 40px;
   line-height: 1.55;
   opacity: 0; transform: translateY(14px);
   transition: opacity .7s ease .4s, transform .7s ease .4s;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
 #hero p.in { opacity: 1; transform: none; }
 
@@ -299,7 +310,14 @@ section { padding: 100px 24px; }
 .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 .btn-primary   { background: var(--accent); color: #fff; }
-.btn-secondary { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+.btn-secondary {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.22); opacity: 1; }
 
 /* ── 7. Skills ───────────────────────────────────────────── */
 #skills { background: var(--subtle); }
@@ -411,8 +429,16 @@ section { padding: 100px 24px; }
   width: 100%;
   aspect-ratio: 3/2;
   background: var(--border);
+  overflow: hidden;
 }
-.project-thumb svg { width: 100%; height: 100%; display: block; }
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+.project-card:hover .project-thumb img { transform: scale(1.04); }
 
 .project-body { padding: 24px; }
 
@@ -749,7 +775,7 @@ footer {
 @media (max-width: 768px) {
   section { padding: 60px 16px; }
 
-  #hero { padding: 100px 16px 80px; }
+  #hero { padding: 100px 16px 80px; background-attachment: scroll; }
   #hero h1 { font-size: clamp(36px, 12vw, 56px); }
   #hero p { font-size: clamp(16px, 4vw, 18px); max-width: 100%; }
   .btn { padding: 14px 28px; font-size: 16px; }
