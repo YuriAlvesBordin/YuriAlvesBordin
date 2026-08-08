@@ -53,7 +53,7 @@
     "description": "Interactive graph of GitHub user connections. Explore users, repositories and relationships through a dynamic physics-based visualization powered by the GitHub API, with search, filtering and interactive node controls.",
     "tags": ["Web · Data Visualization"],
     "languages": ["HTML", "CSS", "JavaScript"],
-    "image": "favicon-512.png",
+    "image": "github-connections.png",
     "repoUrl": "https://github.com/YuriAlvesBordin/github-connections",
     "demoUrl": "https://yurialvesbordin.github.io/github-connections/",
     "stats": { "stars": 0, "forks": 0 },
