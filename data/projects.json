@@ -46,5 +46,17 @@
     "demoUrl": "https://yurialvesbordin.github.io/webxr-demos/",
     "stats": { "stars": 0, "forks": 0 },
     "animation": "from-right"
+  },
+  {
+    "id": "github-connections",
+    "title": "github-connections",
+    "description": "GitHub Connections project.",
+    "tags": ["Web"],
+    "languages": [],
+    "image": "github-connections.png",
+    "repoUrl": "https://github.com/YuriAlvesBordin/github-connections",
+    "demoUrl": null,
+    "stats": { "stars": 0, "forks": 0 },
+    "animation": "from-left"
   }
 ]
