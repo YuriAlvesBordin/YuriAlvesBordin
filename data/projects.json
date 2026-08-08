@@ -1,0 +1,50 @@
+[
+  {
+    "id": "btn",
+    "title": "btn",
+    "description": "Portable, HAL-agnostic button debounce library in C. Supports short click, double click, long press and hold-repeat events. Includes a ready-to-use STM32 HAL port. Zero dynamic allocation.",
+    "tags": ["Embedded C"],
+    "languages": ["C"],
+    "image": "btn.png",
+    "repoUrl": "https://github.com/YuriAlvesBordin/btn",
+    "demoUrl": null,
+    "stats": { "stars": 1, "forks": 1 },
+    "animation": "from-left"
+  },
+  {
+    "id": "dc-motor-controller",
+    "title": "dc-motor-controller",
+    "description": "Portable DC motor controller library in C. Supports both open-loop and closed-loop (PID) control. HAL-agnostic design — runs on STM32, ESP32 or any platform with a PWM driver.",
+    "tags": ["Embedded C"],
+    "languages": ["C"],
+    "image": "dc-motor-controller.png",
+    "repoUrl": "https://github.com/YuriAlvesBordin/dc-motor-controller",
+    "demoUrl": null,
+    "stats": { "stars": 1, "forks": 1 },
+    "animation": "from-right"
+  },
+  {
+    "id": "agenda-medica",
+    "title": "agenda-medica",
+    "description": "Technical challenge: full-stack medical scheduling web app built with Flask, SQLite and Docker. REST API with appointment management, patient records and a clean web interface.",
+    "tags": ["Web · Backend"],
+    "languages": ["Python", "Flask", "Docker"],
+    "image": "agenda-medica.png",
+    "repoUrl": "https://github.com/YuriAlvesBordin/agenda-medica",
+    "demoUrl": null,
+    "stats": { "stars": 1, "forks": 0 },
+    "animation": "from-left"
+  },
+  {
+    "id": "webxr-demos",
+    "title": "webxr-demos",
+    "description": "Interactive WebXR demos with A-Frame: 3D primitive morphing, an atomic model simulation and a drag-and-drop 3D model viewer with AR mode via AR.js. Built as an academic Computer Graphics project.",
+    "tags": ["WebXR · 3D"],
+    "languages": ["HTML", "A-Frame", "AR.js"],
+    "image": "webxr-demos.png",
+    "repoUrl": "https://github.com/YuriAlvesBordin/webxr-demos",
+    "demoUrl": "https://yurialvesbordin.github.io/webxr-demos/",
+    "stats": { "stars": 0, "forks": 0 },
+    "animation": "from-right"
+  }
+]
