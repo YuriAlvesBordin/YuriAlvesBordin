@@ -55,7 +55,7 @@
     "languages": ["HTML", "CSS", "JavaScript"],
     "image": "favicon-512.png",
     "repoUrl": "https://github.com/YuriAlvesBordin/github-connections",
-    "demoUrl": null,
+    "demoUrl": "https://yurialvesbordin.github.io/github-connections/",
     "stats": { "stars": 0, "forks": 0 },
     "animation": "from-left"
   }
