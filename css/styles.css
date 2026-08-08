@@ -256,7 +256,6 @@ section { padding: 100px 24px; }
   color: #ffffff;
   margin-bottom: 24px;
   overflow: hidden;
-  text-shadow: 0 2px 24px rgba(0,0,0,0.4);
 }
 #hero h1 .word {
   display: inline-block;
