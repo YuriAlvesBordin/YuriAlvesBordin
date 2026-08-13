@@ -34,7 +34,8 @@
   </a>
 </div>
 
-### Embedded & Hardware
+
+### Frameworks & Tools
 
 <div align="right">
   <a href="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html" target="_blank" rel="noopener noreferrer">
@@ -49,11 +50,6 @@
   <a href="https://lvgl.io" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/LVGL-00A8E0?style=for-the-badge&logo=lvgl&logoColor=white" alt="LVGL" height="60">
   </a>
-</div>
-
-### Frameworks & Tools
-
-<div align="right">
   <a href="https://tauri.app" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Tauri-24C8DB?style=for-the-badge&logo=tauri&logoColor=white" alt="Tauri" height="60">
   </a>
