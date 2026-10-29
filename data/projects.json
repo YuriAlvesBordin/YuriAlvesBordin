@@ -1,5 +1,17 @@
 [
   {
+    "id": "stm32-swd-mcp",
+    "title": "stm32-swd-mcp",
+    "description": "MCP server for building, flashing and debugging STM32 microcontrollers over SWD. Lets AI coding agents use OpenOCD, serial communication, live variables, hardware breakpoints and watchpoints end to end.",
+    "tags": ["Embedded · AI Tooling"],
+    "languages": ["Python", "MCP", "OpenOCD"],
+    "image": "stm32-swd-mcp.png",
+    "repoUrl": "https://github.com/YuriAlvesBordin/stm32-swd-mcp",
+    "demoUrl": null,
+    "stats": { "stars": 0, "forks": 0 },
+    "animation": "from-left"
+  },
+  {
     "id": "btn",
     "title": "btn",
     "description": "Portable, HAL-agnostic button debounce library in C. Supports short click, double click, long press and hold-repeat events. Includes a ready-to-use STM32 HAL port. Zero dynamic allocation.",
@@ -9,7 +21,7 @@
     "repoUrl": "https://github.com/YuriAlvesBordin/btn",
     "demoUrl": null,
     "stats": { "stars": 1, "forks": 1 },
-    "animation": "from-left"
+    "animation": "from-right"
   },
   {
     "id": "dc-motor-controller",
@@ -21,7 +33,7 @@
     "repoUrl": "https://github.com/YuriAlvesBordin/dc-motor-controller",
     "demoUrl": null,
     "stats": { "stars": 1, "forks": 1 },
-    "animation": "from-right"
+    "animation": "from-left"
   },
   {
     "id": "agenda-medica",
@@ -33,7 +45,7 @@
     "repoUrl": "https://github.com/YuriAlvesBordin/agenda-medica",
     "demoUrl": null,
     "stats": { "stars": 1, "forks": 0 },
-    "animation": "from-left"
+    "animation": "from-right"
   },
   {
     "id": "webxr-demos",
@@ -45,7 +57,7 @@
     "repoUrl": "https://github.com/YuriAlvesBordin/webxr-demos",
     "demoUrl": "https://yurialvesbordin.github.io/webxr-demos/",
     "stats": { "stars": 0, "forks": 0 },
-    "animation": "from-right"
+    "animation": "from-left"
   },
   {
     "id": "github-connections",
@@ -57,6 +69,6 @@
     "repoUrl": "https://github.com/YuriAlvesBordin/github-connections",
     "demoUrl": "https://yurialvesbordin.github.io/github-connections/",
     "stats": { "stars": 0, "forks": 0 },
-    "animation": "from-left"
+    "animation": "from-right"
   }
 ]
