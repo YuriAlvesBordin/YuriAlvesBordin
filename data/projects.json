@@ -1,11 +1,23 @@
 [
+    {
+    "id": "graphium",
+    "title": "graphium",
+    "description": "High-performance WebGL2 graph visualization with silk-smooth force physics, curved edges, node images, and a fluent API.",
+    "tags": ["Embedded · AI Tooling"],
+    "languages": ["TypeScript", "NPM", "WebGL"],
+    "image": "graphium.png",
+    "repoUrl": "https://github.com/YuriAlvesBordin/Graphium",
+    "demoUrl": null,
+    "stats": { "stars": 0, "forks": 0 },
+    "animation": "from-left"
+  },
   {
     "id": "stm32-swd-mcp",
     "title": "stm32-swd-mcp",
     "description": "MCP server for building, flashing and debugging STM32 microcontrollers over SWD. Lets AI coding agents use OpenOCD, serial communication, live variables, hardware breakpoints and watchpoints end to end.",
     "tags": ["Embedded · AI Tooling"],
     "languages": ["Python", "MCP", "OpenOCD"],
-    "image": "../stm32-swd-mcp.png",
+    "image": "stm32-swd-mcp.png",
     "repoUrl": "https://github.com/YuriAlvesBordin/stm32-swd-mcp",
     "demoUrl": null,
     "stats": { "stars": 0, "forks": 0 },
