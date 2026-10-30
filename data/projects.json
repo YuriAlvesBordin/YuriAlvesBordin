@@ -5,7 +5,7 @@
     "description": "MCP server for building, flashing and debugging STM32 microcontrollers over SWD. Lets AI coding agents use OpenOCD, serial communication, live variables, hardware breakpoints and watchpoints end to end.",
     "tags": ["Embedded · AI Tooling"],
     "languages": ["Python", "MCP", "OpenOCD"],
-    "image": "stm32-swd-mcp.png",
+    "image": "../stm32-swd-mcp.png",
     "repoUrl": "https://github.com/YuriAlvesBordin/stm32-swd-mcp",
     "demoUrl": null,
     "stats": { "stars": 0, "forks": 0 },
